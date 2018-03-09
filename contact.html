@@ -6,24 +6,22 @@
         <link rel='stylesheet'type='text/css'href='contact.css'>
       </div>
   </head>
-
-      <ul>
-        <li>
-          <a class="active" href="index.html">
-            <span>Home</span>
-          </a>
-        </li>
-      <li>
-        <a class="active" href="about.html">
-          <span>Mythology</span>
-        </a>
-      </li>
-      <li>
-          <a href="contact.html">
-          <span>Contact</span>
-        </a>
-      </li>
-    </ul>
+  <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Mythology
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="mythology.html">Osiris</a>
+            <a href="mythology.html">Isis</a>
+            <a href="mythology.html">Seth</a>
+            <a href="mythology.html">Horus</a>
+            <a href="mythology.html">Ambis</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact us</a>
+    </div>
 
 <h1>Contact us
 </h1>
@@ -36,6 +34,7 @@
 </p>
 <p>+123 456 7890
 </p>
+<br>
 <div class="form-group">
   <input type="text" id="fname" name="fname" placeholder="Name">
   <input type="text" id="lname" name="lname" placeholder="EMAIL">
