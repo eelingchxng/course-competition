@@ -95,7 +95,7 @@ p{
 }
 
 body {
-  background-image: url("../images/y.jpg");
+  background-image: url("./images/y.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
