@@ -4,7 +4,7 @@
         <title>Egyptian Mythology</title>
         <link rel='stylesheet'type='text/css'href='index.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="index.js"></script>
+
   </head>
   <body>
     <div class="slideshow-container">
@@ -70,5 +70,32 @@ Heh, called Huh in some eras, was one of the original gods of the Ogdoad [the ei
 One’s earthly life was not, however, simply a prologue to something greater but was a part of the entire journey. The Egyptian concept of an afterlife was a mirror-world of one’s life on earth (specifically, one’s life in Egypt) and one needed to live that life well if one hoped to enjoy the rest of one’s eternal journey.
 >>>>>>> origin/master
 </p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
 
   </body>
+</html>

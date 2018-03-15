@@ -80,13 +80,17 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+* {box-sizing: border-box}
 }
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
+.mySlides {
+    display: block;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
